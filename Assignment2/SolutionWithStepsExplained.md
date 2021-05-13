@@ -3,8 +3,10 @@
 ## Instructions
 
  - Same inputs, target outputs and initial weights which were discussed in the lecture were taken ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/2%20layer%20drawing.png)
- - The formula of every node and output of activation unit was written in terms of input, weights and output of nodes. Attaching screenshot for reference ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/formula%20for%20outputs%20and%20activated%20output%20in%20terms%20of%20weights.png)
- - The partial derivatives of the total error w.r.t every weight using chain rule were calculated. The calculations have been covered in the excel file. Attaching screenshot for reference ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/formula%20for%20outputs%20and%20activated%20output%20in%20terms%20of%20weights.png)
+ - The formula of every node and output of activation unit was written in terms of input, weights and output of nodes. Attaching screenshot for reference 
+   - ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/formula%20for%20outputs%20and%20activated%20output%20in%20terms%20of%20weights.png)
+ - The partial derivatives of the total error w.r.t every weight using chain rule were calculated. The calculations have been covered in the excel file. Attaching screenshot for reference 
+   - ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/partial%20derivative%20with%20chain%20rule.png)
  - The first row was filled with formulas for all weights, node values, activated output of node values and the partial derivative of the total error w.r.t each weight
  - Weights are were updated using updation formula for each weight ```Wnew = Wold - Learning_Rate*(dE/dWold)``` in the next row
  - The formulas of the first row for next 51 rows and a graph of etotal was plotted 
