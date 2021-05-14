@@ -18,3 +18,5 @@
   - Learning Rate 1 ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/Learning%20Rate%201.png)
   - Learning Rate 2 ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/Learning%20Rate%202.png)
   - From above images, it might be inferred that the more the learning rate, more faster is the rate with which the etotal reduces. But that is not the case. If the learning rate is exceedingly high then the Etotal might not converge to the minima. Following example of learning rate = 10000000 proves this ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment2/images/Learning%20Rate%2010000000.png)
+
+Note: There was a mistake in the excel sheet taught in lecture (for w3 and w4 error derivatives a_h1 was being used instead of a_h2). That has been rectified
