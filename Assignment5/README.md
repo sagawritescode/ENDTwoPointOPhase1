@@ -120,6 +120,8 @@ At epoch 200, we touched the best accuracy 39.3% but dil mange more. Epochs were
 
 ![Image](https://github.com/kanchana-S/END_Assignment_5/blob/main/images/WhatsApp%20Image%202021-06-18%20at%2000.14.14.jpeg)
 
+Note: The __final submission__ of the colab with clean code is this ![Colab link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Sagar_Kanchana_Pushya_Sentiment_Analysis_using_LSTM_RNN.ipynb). The accuracy for our last run that will be displayed on the file is 37% (less than 2% we claim but we had consistently 39 for at least 7-8 runs), which was for our last run. We think this might be a data problem but did not diagnose it as we ran this on last day
+
 ## Model diagnosis:
 
 We wrote a function ourselves to return the predicted values and their count against the actual values. Later, on seeing the best assignments, we realised that this is called the confusion matrix. Below is the extract of the function we wrote
