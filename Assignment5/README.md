@@ -99,7 +99,7 @@ There was no significant difference in the accuracy (details mentioned in next s
 
 __Model 1 vs Model 2__:
 
-I decided to choose model v1 over v2 as v2 was not giving any significant improvement over v1. Below is the summary of the comparision between model v1 and v2. Note that these things were constant for all the runs: learning rate = 1e-4, no of lstm cells = 2, epochs = 200 and the data augmentation used was v1 (saner weights for the imbalanced class)
+We decided to choose model v1 over v2 as v2 was not giving any significant improvement over v1. Below is the summary of the comparision between model v1 and v2. Note that these things were constant for all the runs: learning rate = 1e-4, no of lstm cells = 2, epochs = 200 and the data augmentation used was v1 (saner weights for the imbalanced class)
 
 
 ![Image](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/images/summary%20of%20v1%20vs%20v2.png)
@@ -112,7 +112,7 @@ v2 training file log - [link](https://github.com/sagawritescode/ENDTwoPointOPhas
 We tried different embeddings (100,300, 400) and hidden layer nodes (50, 100, 150) respectively but the output did not change significantly (less than 1%). No training logs were saved for the final model for each combination, but the same numbers were run for the above (the file links can be referred) and this model and we decided to go with the hyperparameters: embedding = 300 and hidden = 100
 
 __A 5% jump with class balancing via data augmentation__:
-On model diagnosis (explained in later section), it was observed that the model was not predicting positive labels (3 and 4). 3 was getting predicted at some instances but 4 was absent totally from the predictions. Initially, I thought data augmentation could not be a problem as the label 0 has the least frequency in dataset yet the model predicted 0 heavily. But on doing data augmentation, first by v1 and v2 a 3% and 5% jump in validation accuracy was observed. Though the 100% or 80% data augmentation for less frequency classes felt highly illegal, I too have to get maximum marks so decided to go with data augmentation v2 (insane weights for the less frequency class)
+On model diagnosis (explained in later section), it was observed that the model was not predicting positive labels (3 and 4). 3 was getting predicted at some instances but 4 was absent totally from the predictions. Initially, we thought data augmentation could not be a problem as the label 0 has the least frequency in dataset yet the model predicted 0 heavily. But on doing data augmentation, first by v1 and v2 a 3% and 5% jump in validation accuracy was observed. Though the 100% or 80% data augmentation for less frequency classes felt highly illegal, we too have to get maximum marks so decided to go with data augmentation v2 (insane weights for the less frequency class)
 
 Training logs for final model : [link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/training%20logs/training%20logs%20final%20model)
 
@@ -120,7 +120,7 @@ At epoch 200, we touched the best accuracy 39.3% but dil mange more. Epochs were
 
 ![Image](https://github.com/kanchana-S/END_Assignment_5/blob/main/images/WhatsApp%20Image%202021-06-18%20at%2000.14.14.jpeg)
 
-Note: The __final submission__ of the colab with clean code is this ![Colab link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Sagar_Kanchana_Pushya_Sentiment_Analysis_using_LSTM_RNN.ipynb). The accuracy for our last run that will be displayed on the file is 37% (less than 2% we claim but we had consistently 39 for at least 7-8 runs, we have attached the original colab [link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Rough_code_with_higher_accuracy_Sentiment_Analysis_using_LSTM_RNN.ipynb) also but it the code is not clean), which was for our last run. We think this might be a data problem but did not diagnose it as we ran this on last day
+Note: The __final submission__ of the colab with clean code is this [Colab link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Sagar_Kanchana_Pushya_Sentiment_Analysis_using_LSTM_RNN.ipynb). The accuracy for our last run that will be displayed on the file is 37% (less than 2% we claim but we had consistently 39 for at least 7-8 runs, we have attached the original colab [link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Rough_code_with_higher_accuracy_Sentiment_Analysis_using_LSTM_RNN.ipynb) also but it the code is not clean), which was for our last run. We think this might be a data problem but did not diagnose it as we ran this on last day
 
 ## Model diagnosis:
 
