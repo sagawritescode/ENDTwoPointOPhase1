@@ -120,7 +120,7 @@ At epoch 200, we touched the best accuracy 39.3% but dil mange more. Epochs were
 
 ![Image](https://github.com/kanchana-S/END_Assignment_5/blob/main/images/WhatsApp%20Image%202021-06-18%20at%2000.14.14.jpeg)
 
-Note: The __final submission__ of the colab with clean code is this ![Colab link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Sagar_Kanchana_Pushya_Sentiment_Analysis_using_LSTM_RNN.ipynb). The accuracy for our last run that will be displayed on the file is 37% (less than 2% we claim but we had consistently 39 for at least 7-8 runs), which was for our last run. We think this might be a data problem but did not diagnose it as we ran this on last day
+Note: The __final submission__ of the colab with clean code is this ![Colab link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Sagar_Kanchana_Pushya_Sentiment_Analysis_using_LSTM_RNN.ipynb). The accuracy for our last run that will be displayed on the file is 37% (less than 2% we claim but we had consistently 39 for at least 7-8 runs, we have attached the original colab [link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/Rough_code_with_higher_accuracy_Sentiment_Analysis_using_LSTM_RNN.ipynb) also but it the code is not clean), which was for our last run. We think this might be a data problem but did not diagnose it as we ran this on last day
 
 ## Model diagnosis:
 
@@ -291,7 +291,7 @@ actual_label:  Very Negative predicted_label:  Very Positive
 
 ### Other things we tried
 
-- We tried full augmentation (including test) and the data accuracy we got was  __45%__. We read online whether to augment test data and found some controversial opinions. Decided not to submit this version
+- __Full data augmentation__: We tried full augmentation (including test) and the data accuracy we got was  __45%__. We read online whether to augment test data and found some controversial opinions. Decided not to submit this version. Github link with colab and training logs for this trail : [link](https://github.com/kanchana-S/END_Assignment_5/blob/main/README.md)
 - Tried Optimiser Adagrad but no luck
 - Tried other models with RNN and GRU but gave similar accuracy
 
@@ -307,6 +307,9 @@ actual_label:  Very Negative predicted_label:  Very Positive
 - Data Augmentation
   - How much precent of data augmentation is legal? Can we even make the class of one label thrice its size?
   - Should traditional pre-processing like removing stop words etc  be considered for deep learning models also? Read online that is not the best practice as in deep learning the model should understand
+
+- Training
+  - How many epochs is good epochs? We saw in class colab files training epochs range from 20-50. We had to train around 200-300 at least get the accuracy jump, though we understand that the model might have overfit, but the accuracy was consistent
 
 
 
