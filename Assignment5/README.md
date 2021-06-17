@@ -17,9 +17,7 @@ The train-test split was 75-25
 ### Data Augmentation
 
 
-Used the existing random_delete, random_swap and backtranslate functions. Was iterating over a list and augmenting data with 2 random variables - one for 
-sampling the list data and other for deciding how to augment out of 3 methods. But sampling was not done as desired as the use of np.random for every iteration
-does not guarentee absolute probability. Later after some searching, used random.sample which gave the desired sampling
+Used the existing random_delete, random_swap and backtranslate functions. And sampled using random.
 
 
 Before moving forward to the strategy lets see a rough distribution of the labels (output for a 75-25 split for a train dataset):
@@ -97,8 +95,6 @@ ___Model v1 over model v2___
 There was no significant difference in the accuracy (details mentioned in next section). Hence decided to choose model 1 as the final model
 
 
-
-
 ### Output/This is what we came for
 
 __Model 1 vs Model 2__:
@@ -120,9 +116,9 @@ On model diagnosis (explained in later section), it was observed that the model 
 
 Training logs for final model : [link](https://github.com/sagawritescode/ENDTwoPointOPhase1/blob/main/Assignment5/training%20logs/training%20logs%20final%20model)
 
-At epoch 200, we touched the best accuracy 39.3% but dil mange more. Epochs were increased to 300 and 40% was touched at some points. Below is the graph for the same. But note that after repeating 1-2 time and even increasing epochs to 400 (cause why not) the model did not touch 40, so the models finals accuracy can be said to __39%__: 
+At epoch 200, we touched the best accuracy 39.3% but dil mange more. Epochs were increased to 300 and 40% was touched at some points. Below is the graph for the same. But note that after repeating 1-2 time and even increasing epochs to 400 (cause why not) the model did not touch 40 consitently, so the models finals accuracy can be said to __39%__: 
 
-
+![Image](https://github.com/kanchana-S/END_Assignment_5/blob/main/images/WhatsApp%20Image%202021-06-18%20at%2000.14.14.jpeg)
 
 ## Model diagnosis:
 
@@ -291,9 +287,11 @@ actual_label:  Very Negative predicted_label:  Very Positive
 ```
 
 
+### Other things we tried
 
-
-
+- We tried full augmentation (including test) and the data accuracy we got was  __45%__. We read online whether to augment test data and found some controversial opinions. Decided not to submit this version
+- Tried Optimiser Adagrad but no luck
+- Tried other models with RNN and GRU but gave similar accuracy
 
 
 ## Long road ahead/Things to learn:
@@ -310,8 +308,10 @@ actual_label:  Very Negative predicted_label:  Very Positive
 
 
 
+## Group members
 
-
-
+- Sagar Shete
+- Pushya Mitra
+- Kanchana Gore
 
 
